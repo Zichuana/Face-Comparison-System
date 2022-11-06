@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Face-Comparison</title>
+    <!-- Plugin css -->
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" media="all">
+    <link rel="stylesheet" type="text/css" href="css/flaticon.css" media="all">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="all">
+    <link rel="stylesheet" type="text/css" href="css/animate.css" media="all">
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css" media="all">
+    <link rel="stylesheet" type="text/css" href="css/lightcase.css" media="all">
+    <link rel="stylesheet" type="text/css" href="css/jquery.nstSlider.css" media="all">
+    <link rel="stylesheet" type="text/css" href="css/flexslider.css" media="all">
+
+    <!-- own style css -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
+    <link rel="stylesheet" type="text/css" href="css/rtl.css" media="all">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" media="all">
+
+</head>
+
+<body>
+
+
+<!-- Start Pre-Loader-->
+<div id="loading">
+    <div id="loading-center">
+        <div id="loading-center-absolute">
+            <div class="object" id="object_one"></div>
+            <div class="object" id="object_two"></div>
+            <div class="object" id="object_three"></div>
+            <div class="object" id="object_four"></div>
+        </div>
+    </div>
+</div>
+<!-- Start Pre-Loader -->
+
+
+<div class="box-layout">
+
+    <!-- End Pre-Loader -->
+    <header class="header-style-2">
+        <div class="bg-header-top">
+            <div class="container">
+                <div class="row">
+                    <div class="header-top">
+                        <ul class="h-contact">
+                            <li><i class="flaticon-time-left"></i> Time : 2022/11/6</li>
+                            <li><i class="flaticon-vibrating-phone"></i> Email : zichuana@stu.ahtcm.edu.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- .bg-header-top -->
+        <!-- Start Menu -->
+    </header>
+
+
+    <!-- Start Slider Section -->
+    <section class="bg-slider-option">
+        <div class="slider-option slider-two">
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <div class="slider-item">
+                            <img src="picture/img.png" alt="bg-slider-2">
+                            <div class="slider-content-area">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-6"></div>
+                                        <div class="col-md-6">
+                                            <div class="slider-content">
+                                                <h3>&#128512;人脸比对</h3>
+                                                <h2>Face-Comparison</h2>
+                                                <p>基于facenet_pytorch设计</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Slider Section -->
+
+
+    <!-- Start Upcoming Events Section -->
+    <section class="bg-upcoming-events">
+        <div class="container">
+            <div class="row">
+                <div class="upcoming-events">
+                    <div class="section-header">
+                        <h2>&#129409;</h2>
+                        <p>上传需要判断是否为同一人的两张脸部图像，点击测试按钮进行比对分析</p>
+                    </div>
+                    <!-- .section-header -->
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div>
+                                <!--                 href="javascript:;"-->
+                                <input href="javascript:;" class="btn btn-default" tabindex="0" type="file" name="file"
+                                       id="file0">
+
+                                </input>
+                                <p></p>
+                                <img src="" id="img0">
+                            </div>
+                        </div>
+                        <!-- .col-lg-6 -->
+                        <div class="col-lg-6">
+                            <div>
+                                <!--                 href="javascript:;"-->
+                                <input href="javascript:;" class="btn btn-default" tabindex="0" type="file" name="file"
+                                       id="file1">
+                                </input>
+                                <p></p>
+                                <img src="" id="img1">
+                            </div>
+                        </div>
+                        <!-- .col-lg-6 -->
+                        <p></p>
+                        <div>
+                            <!--                style="margin-top:20px;width: 35rem;height: 30rem; padding-left: 20px"-->
+                            <input class="btn btn-default" type="button" id="b0"
+                                   onclick="test0()" style="color: #000000"
+                                   value="预测">
+                            <p></p>
+                            <pre id="out">&#129300;点击预测获取结果</pre>
+                            <!--                <pre id="out" style="width:320px;height:50px;line-height: 50px;margin-top:20px;"></pre>-->
+                        </div>
+                    </div>
+                    <!-- .row -->
+                </div>
+                <!-- .upcoming-events -->
+            </div>
+            <!-- .row -->
+        </div>
+        <!-- .container -->
+    </section>
+    <!-- End Upcoming Events Section -->
+
+
+    <!-- Start Sponsors Section -->
+    <section class="bg-sponsors-section">
+        <div class="container">
+            <div class="row">
+                <div class="sponsors-option">
+                    <div class="section-header">
+                        <h2>@Zichuana</h2>
+                        <p>&#128510;</p>
+                        <p>浅水一个web玩</p>
+                    </div>
+                </div>
+                <!-- .sponsors-option -->
+            </div>
+            <!-- .row -->
+        </div>
+        <!-- .container -->
+    </section>
+    <!-- End Sponsors Section -->
+
+
+    <!-- Start Scrolling -->
+    <div class="scroll-img"><i class="fa fa-angle-up" aria-hidden="true"></i></div>
+    <!-- End Scrolling -->
+
+
+</div>
+
+
+<script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
+<script type="text/javascript" src="js/jquery.counterup.min.js"></script>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript" src="js/lightcase.js"></script>
+<script type="text/javascript" src="js/jquery.nstSlider.js"></script>
+<script type="text/javascript" src="js/jquery.flexslider.js"></script>
+<script type="text/javascript" src="js/custom.map.js"></script>
+<script type="text/javascript" src="js/plugins.isotope.js"></script>
+<script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+<script type="text/javascript" src="js/custom.isotope.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+<script type="text/javascript">
+    $("#file0").change(function () {
+        var objUrl = getObjectURL(this.files[0]);//获取文件信息
+        console.log("objUrl = " + objUrl);
+        if (objUrl) {
+            $("#img0").attr("src", objUrl);
+        }
+    });
+    $("#file1").change(function () {
+        var objUrl = getObjectURL(this.files[0]);//获取文件信息
+        console.log("objUrl = " + objUrl);
+        if (objUrl) {
+            $("#img1").attr("src", objUrl);
+        }
+    });
+
+    function test0() {
+        var fileobj0 = $("#file0")[0].files[0];
+        var fileobj1 = $("#file1")[0].files[0];
+        var form = new FormData();
+        form.append("file0", fileobj0);
+        form.append("file1", fileobj1);
+        var out = '';
+        var fazhi = '';
+        var oushi = '';
+        $.ajax({
+            type: 'POST',
+            url: "predict",
+            data: form,
+            async: false,       //同步执行
+            processData: false, // 告诉jquery要传输data对象
+            contentType: false, //告诉jquery不需要增加请求头对于contentType的设置
+            success: function (arg) {
+                console.log(arg)
+                out = arg.fazhi + '\n' + arg.oushi + '\n' + arg.result
+                err = arg.err
+            }, error: function () {
+                console.log("后台处理错误");
+            }
+        });
+
+        // if(oushi!==undefined){document.getElementById("oushi").innerText = oushi;}
+        // if(fazhi!==undefined){document.getElementById("fazhi").innerText = fazhi;}
+        if (err !== undefined) {
+            document.getElementById("out").innerText = err;
+        }
+        if (out !== undefined) {
+            document.getElementById("out").innerHTML = out;
+        }
+
+    }
+
+    function getObjectURL(file) {
+        var url = null;
+        if (window.createObjectURL != undefined) {
+            url = window.createObjectURL(file);
+        } else if (window.URL != undefined) { // mozilla(firefox)
+            url = window.URL.createObjectURL(file);
+        } else if (window.webkitURL != undefined) { // webkit or chrome
+            url = window.webkitURL.createObjectURL(file);
+        }
+        return url;
+    }
+</script>
+
+
+</body>
+
+</html>
