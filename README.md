@@ -1,13 +1,15 @@
-### »ùÓÚfacenet_pytorchÉè¼Æ
-Ö÷Ò³Ãæ  
+### åŸºäºfacenet_pytorchè®¾è®¡
+ä¸»é¡µé¢  
 ![image](display1.png)
-ÑùÀı¼ì²â½á¹ûÈçÏÂ(Í¼Æ¬À´×ÔÓÚ°Ù¶ÈÍ¼¿â)  
+æ ·ä¾‹æ£€æµ‹ç»“æœå¦‚ä¸‹(å›¾ç‰‡æ¥è‡ªäºç™¾åº¦å›¾åº“)  
 ![image](display2.png)
 ### python 3.10
-### ËùÓÃµ½µÄ¿â¼°Æä°æ±¾
+### æ‰€ç”¨åˆ°çš„åº“åŠå…¶ç‰ˆæœ¬
 ```
 Flask                        2.2.1
 opencv-python                4.6.0.66
 torch                        1.12.1
 facenet-pytorch              2.5.2
 ```
+### æ•™ç¨‹
+[æˆ‘çš„åšå®¢](https://zichuana.github.io/2022/11/20/Face-Comparison-Demo/)
